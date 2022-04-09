@@ -15,7 +15,7 @@ jobs:
     - uses: subosito/flutter-action@v1
       with:
         channel: 'stable'  
-    # Get flutter packages
-    - run: flutter pub get --ignore-deprecation
+    # Help
+    - run: flutter packages pub get 
     # Build :D 
     - run: flutter build apk --ignore-deprecation
