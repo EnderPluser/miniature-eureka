@@ -16,6 +16,6 @@ jobs:
       with:
         channel: 'stable'  
     # Get flutter packages
-    - run: flutter pub get
+    - run: flutter pub get --ignore-deprecation
     # Build :D 
     - run: flutter build apk --ignore-deprecation
