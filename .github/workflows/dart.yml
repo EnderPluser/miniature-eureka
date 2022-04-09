@@ -18,4 +18,4 @@ jobs:
     # Help
     - run: flutter packages pub get 
     # Build :D 
-    - run: flutter build apk --ignore-deprecation
+    - run: flutter build apk --no-sound-null-safety
