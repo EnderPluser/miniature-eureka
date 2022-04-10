@@ -10,10 +10,10 @@ jobs:
     - uses: actions/checkout@v1 
     - uses: actions/setup-java@v1
       with:
-        java-version: '12.x'
+       java-version: '12.x'
     - uses: subosito/flutter-action@v1
       with:
-        channel: 'stable'  
+       channel: 'stable'  
     # Help
     - run: flutter packages pub get 
     # Build :D 
@@ -21,8 +21,8 @@ jobs:
     # Upload Build 
     - uses: actions/upload-artifact@master
       with:
-        name: apk-build
-        path: build/app/outputs/apk/release
+       name: apk-build
+       path: build/app/outputs/apk/release
  build-web:
     name: Build Flutter (Web)
     runs-on: ubuntu-latest
