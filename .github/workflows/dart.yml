@@ -1,5 +1,4 @@
 name: Dart CI
-
 on: 
  push:
  workflow_dispatch:
