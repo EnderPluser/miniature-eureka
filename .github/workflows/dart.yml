@@ -40,3 +40,11 @@ jobs:
       with:
         name: web-build
         path: build/web
+
+      - name: Deploy to Firebase
+        uses: w9jds/firebase-action@master
+        with:
+          args: deploy --only hosting --public web-build
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+          PROJECT_ID: facebook-knockoff
