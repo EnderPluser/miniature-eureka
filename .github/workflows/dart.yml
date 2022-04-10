@@ -14,8 +14,12 @@ jobs:
     - uses: subosito/flutter-action@v1
       with:
        channel: 'stable'  
+    # Clean
+    - run: flutter clean
+    # Find Issue
+    - run: flutter doctor -v
     # Help
-    - run: flutter packages pub get 
+    - run: flutter pub get 
     # Build :D 
     - run: flutter build apk --no-sound-null-safety
     # Upload Build 
