@@ -24,7 +24,6 @@ jobs:
         name: apk-build
         path: build/app/outputs/apk/release
 
-jobs:
  build-web:
     name: Build Flutter (Web)
     runs-on: ubuntu-latest
